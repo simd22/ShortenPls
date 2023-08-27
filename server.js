@@ -7,7 +7,8 @@ const app = express()
 
 // connects Node.js application to a MongoDB database using the Mongoose library
 // ensure Mongoose uses latest recommended mechanisms for parsing URLs & managing server connections
-mongoose.connect('mongodb://localhost/myUrlShortener', {
+mongoose.connect('mongodb+srv://sd:BBahkvA6o3JcCPMi@cluster0.ggxwb4z.mongodb.net/?retryWrites=true&w=majority', { 
+    // mongodb://localhost/myUrlShortener
     useNewUrlParser : true, useUnifiedTopology : true
 })
 
