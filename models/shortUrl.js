@@ -1,17 +1,17 @@
 const mongoose = require('mongoose')
 // library that creates unique short indentifier 
-const shortId = require('shortid')
+const shortId = require('shortid') 
 
-// Mongoose Schema acts as a blueprint for data should be organization/storage in database
+// Mongoose Schema - blueprint for how data organization/storage in database
 const shortUrlSchema = new mongoose.Schema({
-    full: { // name of col in DB, type, required
+    full: {
         type: String,
         required: true
     },
     short: {
         type: String,
         required: true,
-        default: shortId.generate // auto runs fxn no need for ()
+        default: shortId.generate // auto runs
     },
     clicks: {
         type: Number,
